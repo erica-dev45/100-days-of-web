@@ -1,0 +1,50 @@
+ body{
+    background-color: black;
+    color: white;
+    margin-top: 30px;
+ }
+ 
+ .logo{
+    display: inline;
+    margin: 15px;
+}
+.home-name{
+    background-color: blueviolet;
+    padding: 10px 20px;
+    border-radius: 5px;
+    
+}
+a{
+    text-decoration: none;
+    cursor: pointer;
+    margin-top: 5px;
+    color: white;
+}
+
+.sidebar-links {
+    display: flex;
+    flex-direction: column;
+    margin-top: 15px;
+   
+    
+}
+a:active{
+    color: white;
+    background-color: blueviolet;
+}
+
+
+
+
+
+@media (min-width:768px) {
+    .sidebar{
+        margin-right: 60px;
+    }
+
+    .dashboard-container{
+    display: flex;
+    margin: 1.5em;
+}
+}
+

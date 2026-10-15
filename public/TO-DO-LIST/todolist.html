@@ -3,11 +3,17 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css"/>
     <title>to-do-list</title>
   </head>
   <body>
     <div class="dashboard-container">
       <section class="sidebar">
+    
+
+          <p class="logo">TO-DO LIST</p>
+          <a href="#" class="home-name">Back to Home</a>
+        
         <nav class="sidebar-links">
           <a href="#">Home</a>
           <a href="#">Documents</a>
@@ -21,55 +27,67 @@
           <button>Clear Completed</button>
         </div>
       </section>
+      <div class="Content">
 
-      <section class="progress">
-        <p>STAY PRODUCTIVE</p>
-        <h3>JUST DO IT.</h3>
-        <p>
-          Organise yout day, conquer your goals via drag-and-drop workspace
-          lanes
-        </p>
-        <progress id="finished-bar" value="0" max="100">0%</progress>
-        <label for="finished-bar">0/3 tasks finished (0%)</label>
-      </section>
-
-      <section class="creating-tasks">
-        <button>Category</button>
-        <ul id="category">
-          <li>Work</li>
-          <li>Personal</li>
-          <li>Study</li>
-          <li>Health</li>
-          <li>Fitness</li>
-          <li>Urgent</li>
-          <li>Miscellaneus</li>
-        </ul>
-
-        <button>Priority</button>
-        <ul id="priority">
-          <li>Low</li>
-          <li>Medium</li>
-          <li>High</li>
-        </ul>
-        <input type="text" placeholder="What do you need to do?" /><br />
-
-        <input type="date" id="Date" /><br />
-        <button type="submit">Add Tasks</button>
-      </section>
-
-      <section class="search">
-        <div class="search-bar">
-          <input type="search" placeholder="Search tasks..." />
-        </div>
-
-        <div class="task-board">
-          <p id="total">TOTAL</p>
-          <p id="in-progress">IN PROGRESS</p>
-          <p id="complete">COMPLETED</p>
-          <p id="overdue">OVERDUE</p>
-        </div>
-
-      </section>
+        <section class="progress">
+          <p>STAY PRODUCTIVE</p>
+          <h3>JUST DO IT.</h3>
+          <p>
+            Organise yout day, conquer your goals via drag-and-drop workspace
+            lanes
+          </p>
+          <progress id="finished-bar" value="0" max="100">0%</progress>
+          <label for="finished-bar">0/3 tasks finished (0%)</label>
+        </section>
+  
+        <section class="creating-tasks">
+          <button>Category</button>
+          <ul id="category">
+            <li>Work</li>
+            <li>Personal</li>
+            <li>Study</li>
+            <li>Health</li>
+            <li>Fitness</li>
+            <li>Urgent</li>
+            <li>Miscellaneus</li>
+          </ul>
+  
+          <button>Priority</button>
+          <ul id="priority">
+            <li>Low</li>
+            <li>Medium</li>
+            <li>High</li>
+          </ul>
+          <input type="text" placeholder="What do you need to do?" /><br />
+  
+          <input type="date" id="Date" /><br />
+          <button type="submit">Add Tasks</button>
+        </section>
+  
+        <section class="search">
+          <div class="search-bar">
+            <input type="search" placeholder="Search tasks..." />
+          </div>
+  
+          <div class="task-board">
+            <div class="status">
+              <p id="total">TOTAL</p>
+              <p id="in-progress">IN PROGRESS</p>
+              <p id="complete">COMPLETED</p>
+              <p id="overdue">OVERDUE</p>
+  
+            </div>
+            <div class="status-summary">
+              <p id="pending">PENDING</p>
+              <p id="in-progress">IN PROGRESS</p>
+              <p id="complete">COMPLETED</p>
+  
+  
+            </div>
+          </div>
+  
+        </section>
+      </div>
     </div>
   </body>
 </html>
